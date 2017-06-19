@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D260D6031EF8256E0098CDD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260D6021EF8256E0098CDD5 /* AppDelegate.swift */; };
+		D260D6051EF8256E0098CDD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260D6041EF8256E0098CDD5 /* ViewController.swift */; };
+		D260D6081EF8256E0098CDD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D260D6061EF8256E0098CDD5 /* Main.storyboard */; };
+		D260D60B1EF8256E0098CDD5 /* V2EXios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D260D6091EF8256E0098CDD5 /* V2EXios.xcdatamodeld */; };
+		D260D60D1EF8256E0098CDD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D260D60C1EF8256E0098CDD5 /* Assets.xcassets */; };
+		D260D6101EF8256E0098CDD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D260D60E1EF8256E0098CDD5 /* LaunchScreen.storyboard */; };
+		D260D61B1EF8256E0098CDD5 /* V2EXiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260D61A1EF8256E0098CDD5 /* V2EXiosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D260D6171EF8256E0098CDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D260D5F71EF8256E0098CDD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D260D5FE1EF8256E0098CDD5;
+			remoteInfo = V2EXios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D260D5FF1EF8256E0098CDD5 /* V2EXios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2EXios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D260D6021EF8256E0098CDD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D260D6041EF8256E0098CDD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D260D6071EF8256E0098CDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D260D60A1EF8256E0098CDD5 /* V2EXios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = V2EXios.xcdatamodel; sourceTree = "<group>"; };
+		D260D60C1EF8256E0098CDD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D260D60F1EF8256E0098CDD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D260D6111EF8256E0098CDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D260D6161EF8256E0098CDD5 /* V2EXiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V2EXiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D260D61A1EF8256E0098CDD5 /* V2EXiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXiosTests.swift; sourceTree = "<group>"; };
+		D260D61C1EF8256E0098CDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D260D5FC1EF8256E0098CDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D260D6131EF8256E0098CDD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D260D5F61EF8256E0098CDD5 = {
+			isa = PBXGroup;
+			children = (
+				D260D6011EF8256E0098CDD5 /* V2EXios */,
+				D260D6191EF8256E0098CDD5 /* V2EXiosTests */,
+				D260D6001EF8256E0098CDD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D260D6001EF8256E0098CDD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D260D5FF1EF8256E0098CDD5 /* V2EXios.app */,
+				D260D6161EF8256E0098CDD5 /* V2EXiosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D260D6011EF8256E0098CDD5 /* V2EXios */ = {
+			isa = PBXGroup;
+			children = (
+				D260D6021EF8256E0098CDD5 /* AppDelegate.swift */,
+				D260D6041EF8256E0098CDD5 /* ViewController.swift */,
+				D260D6061EF8256E0098CDD5 /* Main.storyboard */,
+				D260D60C1EF8256E0098CDD5 /* Assets.xcassets */,
+				D260D60E1EF8256E0098CDD5 /* LaunchScreen.storyboard */,
+				D260D6111EF8256E0098CDD5 /* Info.plist */,
+				D260D6091EF8256E0098CDD5 /* V2EXios.xcdatamodeld */,
+			);
+			path = V2EXios;
+			sourceTree = "<group>";
+		};
+		D260D6191EF8256E0098CDD5 /* V2EXiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				D260D61A1EF8256E0098CDD5 /* V2EXiosTests.swift */,
+				D260D61C1EF8256E0098CDD5 /* Info.plist */,
+			);
+			path = V2EXiosTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D260D5FE1EF8256E0098CDD5 /* V2EXios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D260D61F1EF8256E0098CDD5 /* Build configuration list for PBXNativeTarget "V2EXios" */;
+			buildPhases = (
+				D260D5FB1EF8256E0098CDD5 /* Sources */,
+				D260D5FC1EF8256E0098CDD5 /* Frameworks */,
+				D260D5FD1EF8256E0098CDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = V2EXios;
+			productName = V2EXios;
+			productReference = D260D5FF1EF8256E0098CDD5 /* V2EXios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D260D6151EF8256E0098CDD5 /* V2EXiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D260D6221EF8256E0098CDD5 /* Build configuration list for PBXNativeTarget "V2EXiosTests" */;
+			buildPhases = (
+				D260D6121EF8256E0098CDD5 /* Sources */,
+				D260D6131EF8256E0098CDD5 /* Frameworks */,
+				D260D6141EF8256E0098CDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D260D6181EF8256E0098CDD5 /* PBXTargetDependency */,
+			);
+			name = V2EXiosTests;
+			productName = V2EXiosTests;
+			productReference = D260D6161EF8256E0098CDD5 /* V2EXiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D260D5F71EF8256E0098CDD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = haowang;
+				TargetAttributes = {
+					D260D5FE1EF8256E0098CDD5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4K5C5J6AQ9;
+						ProvisioningStyle = Automatic;
+					};
+					D260D6151EF8256E0098CDD5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4K5C5J6AQ9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D260D5FE1EF8256E0098CDD5;
+					};
+				};
+			};
+			buildConfigurationList = D260D5FA1EF8256E0098CDD5 /* Build configuration list for PBXProject "V2EXios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D260D5F61EF8256E0098CDD5;
+			productRefGroup = D260D6001EF8256E0098CDD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D260D5FE1EF8256E0098CDD5 /* V2EXios */,
+				D260D6151EF8256E0098CDD5 /* V2EXiosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D260D5FD1EF8256E0098CDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D260D6101EF8256E0098CDD5 /* LaunchScreen.storyboard in Resources */,
+				D260D60D1EF8256E0098CDD5 /* Assets.xcassets in Resources */,
+				D260D6081EF8256E0098CDD5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D260D6141EF8256E0098CDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D260D5FB1EF8256E0098CDD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D260D6051EF8256E0098CDD5 /* ViewController.swift in Sources */,
+				D260D60B1EF8256E0098CDD5 /* V2EXios.xcdatamodeld in Sources */,
+				D260D6031EF8256E0098CDD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D260D6121EF8256E0098CDD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D260D61B1EF8256E0098CDD5 /* V2EXiosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D260D6181EF8256E0098CDD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D260D5FE1EF8256E0098CDD5 /* V2EXios */;
+			targetProxy = D260D6171EF8256E0098CDD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D260D6061EF8256E0098CDD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D260D6071EF8256E0098CDD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D260D60E1EF8256E0098CDD5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D260D60F1EF8256E0098CDD5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D260D61D1EF8256E0098CDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D260D61E1EF8256E0098CDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D260D6201EF8256E0098CDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4K5C5J6AQ9;
+				INFOPLIST_FILE = V2EXios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haowang.-.V2EXios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D260D6211EF8256E0098CDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4K5C5J6AQ9;
+				INFOPLIST_FILE = V2EXios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haowang.-.V2EXios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D260D6231EF8256E0098CDD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4K5C5J6AQ9;
+				INFOPLIST_FILE = V2EXiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haowang.-.V2EXiosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/V2EXios.app/V2EXios";
+			};
+			name = Debug;
+		};
+		D260D6241EF8256E0098CDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4K5C5J6AQ9;
+				INFOPLIST_FILE = V2EXiosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haowang.-.V2EXiosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/V2EXios.app/V2EXios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D260D5FA1EF8256E0098CDD5 /* Build configuration list for PBXProject "V2EXios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D260D61D1EF8256E0098CDD5 /* Debug */,
+				D260D61E1EF8256E0098CDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D260D61F1EF8256E0098CDD5 /* Build configuration list for PBXNativeTarget "V2EXios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D260D6201EF8256E0098CDD5 /* Debug */,
+				D260D6211EF8256E0098CDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D260D6221EF8256E0098CDD5 /* Build configuration list for PBXNativeTarget "V2EXiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D260D6231EF8256E0098CDD5 /* Debug */,
+				D260D6241EF8256E0098CDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D260D6091EF8256E0098CDD5 /* V2EXios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D260D60A1EF8256E0098CDD5 /* V2EXios.xcdatamodel */,
+			);
+			currentVersion = D260D60A1EF8256E0098CDD5 /* V2EXios.xcdatamodel */;
+			path = V2EXios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D260D5F71EF8256E0098CDD5 /* Project object */;
+}
