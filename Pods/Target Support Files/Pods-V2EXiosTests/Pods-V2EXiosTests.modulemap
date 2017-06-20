@@ -1,0 +1,6 @@
+framework module Pods_V2EXiosTests {
+  umbrella header "Pods-V2EXiosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
