@@ -7,3 +7,4 @@
 #import <MJRefresh/MJRefresh.h>
 #import <MagicalRecord/MagicalRecord.h>
 #import <AFNetworking/AFNetworking.h>
+#import <YYText/YYText.h>
