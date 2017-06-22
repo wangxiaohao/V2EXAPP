@@ -22,24 +22,20 @@ class DetailHeaderView: UIView {
     fileprivate let heightObset : Observer<CGFloat,NoError>
     let hetightSignal : Signal<CGFloat,NoError>
     
-    var model:HotModel!{
+    var viewModel:DetailViewModel!{
         didSet{
-            titleLab.text = model.title
-            avatarView.sd_setImage(with: URL.init(string: model.member?.avatar_large ?? ""), placeholderImage: placeholder_Image)
-            userLab.text = model.member?.username
-            timeLab.text = Date.returnTimeString(WithTimestamp: Int(model.created))
+            titleLab.text = viewModel.model.title
+            avatarView.sd_setImage(with: URL.init(string:viewModel.model.member?.avatar_large ?? ""), placeholderImage: placeholder_Image)
+            userLab.text = viewModel.model.member?.username
+            timeLab.text = Date.returnTimeString(WithTimestamp: Int(viewModel.model.created))
+           
+            //异步布局排版
             DispatchQueue.global().async {
-                let text = NSMutableAttributedString.init(string: self.model.content!)
-                text.yy_font = UIFont.systemFont(ofSize: 14)
-                text.yy_color = UIColor.gray
-                let container = YYTextContainer()
-                container.size = CGSize(width: SCREEN_WIDH - 50, height: CGFloat.greatestFiniteMagnitude)
-                container.maximumNumberOfRows = 0
-                let layout = YYTextLayout(container: container, text: text)
-                
                 DispatchQueue.main.async {
+                    let layout = self.viewModel.caculateLayOut()
+                    let size = self.viewModel.model.title?.sizeWithFont(UIFont.systemFont(ofSize: 14))
                     self.contentLab.textLayout = layout
-                    self.heightObset.send(value: (layout?.textBoundingSize.height)! + 130)
+                    self.heightObset.send(value: (layout.textBoundingSize.height) + (size?.height)! + 110)
                 }
                 
             }
@@ -59,6 +55,7 @@ class DetailHeaderView: UIView {
 
         
         super.init(frame: frame)
+        self.backgroundColor = UIColor.white
         self.autoresizesSubviews = true 
         self.addSubview(titleLab)
         titleLab.snp.makeConstraints({
@@ -69,7 +66,7 @@ class DetailHeaderView: UIView {
         })
         titleLab.font = UIFont.systemFont(ofSize: 15)
         titleLab.textColor = UIColor.black
-        titleLab.numberOfLines = 2
+        titleLab.numberOfLines = 0
         self.addSubview(contentLab)
         contentLab.snp.makeConstraints({
             $0.left.equalTo(25)
@@ -87,11 +84,13 @@ class DetailHeaderView: UIView {
             $0.width.equalTo(30)
             $0.height.equalTo(30)
         })
+        avatarView.layer.masksToBounds = true
+        avatarView.layer.cornerRadius = 15
         
         self.addSubview(userLab)
         userLab.snp.makeConstraints({
             $0.left.equalTo(avatarView.snp.right).inset(-10)
-            $0.bottom.equalTo(avatarView.snp.bottom)
+            $0.centerY.equalTo(avatarView)
         })
         userLab.font = UIFont.systemFont(ofSize: 12)
         userLab.textColor = UIColor.black
@@ -99,10 +98,10 @@ class DetailHeaderView: UIView {
         self.addSubview(timeLab)
         timeLab.snp.makeConstraints({
             $0.right.equalTo(-15)
-            $0.bottom.equalTo(userLab.snp.bottom)
+            $0.centerY.equalTo(avatarView)
         })
         timeLab.font = UIFont.systemFont(ofSize: 12)
-        timeLab.textColor = UIColor.black
+        timeLab.textColor = UIColor.gray
 
     
     }
