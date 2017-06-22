@@ -28,6 +28,19 @@
 		D27708BB1EF96C7F0061820F /* AFNManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708BA1EF96C7F0061820F /* AFNManger.swift */; };
 		D27708BD1EF96D8B0061820F /* RequestUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708BC1EF96D8B0061820F /* RequestUrl.swift */; };
 		D27708BF1EF97FCF0061820F /* MBProgressHUDExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708BE1EF97FCF0061820F /* MBProgressHUDExtension.swift */; };
+		D27708C31EFA263C0061820F /* NavigationProtrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708C21EFA263C0061820F /* NavigationProtrol.swift */; };
+		D27708C51EFA34180061820F /* MJRefreshDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708C41EFA34180061820F /* MJRefreshDelegate.swift */; };
+		D27708C81EFAB2260061820F /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708C71EFAB2260061820F /* WKWebViewController.swift */; };
+		D27708CA1EFAB2F90061820F /* WKViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708C91EFAB2F90061820F /* WKViewModel.swift */; };
+		D27708CC1EFAB8F30061820F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708CB1EFAB8F30061820F /* UIViewControllerExtension.swift */; };
+		D27708CE1EFAC1EB0061820F /* WKToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708CD1EFAC1EB0061820F /* WKToolBar.swift */; };
+		D27708D31EFACE8E0061820F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708D21EFACE8E0061820F /* DetailViewController.swift */; };
+		D27708D51EFACE990061820F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708D41EFACE990061820F /* DetailViewModel.swift */; };
+		D27708D81EFAD7280061820F /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708D71EFAD7280061820F /* DetailHeaderView.swift */; };
+		D27708DC1EFB9BC20061820F /* OperateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708DB1EFB9BC20061820F /* OperateData.swift */; };
+		D2B590141EFBF1DC008B7C89 /* NSObjcetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B590131EFBF1DC008B7C89 /* NSObjcetExtension.swift */; };
+		D2B590171EFC155A008B7C89 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B590151EFC155A008B7C89 /* CommentTableViewCell.swift */; };
+		D2B590181EFC155A008B7C89 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B590161EFC155A008B7C89 /* CommentTableViewCell.xib */; };
 		DE66E1EF4EDA6B4FE5716111 /* Pods_V2EXios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C0A652AF4A8FDCC121DC1A /* Pods_V2EXios.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +85,19 @@
 		D27708BA1EF96C7F0061820F /* AFNManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNManger.swift; sourceTree = "<group>"; };
 		D27708BC1EF96D8B0061820F /* RequestUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestUrl.swift; sourceTree = "<group>"; };
 		D27708BE1EF97FCF0061820F /* MBProgressHUDExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUDExtension.swift; sourceTree = "<group>"; };
+		D27708C21EFA263C0061820F /* NavigationProtrol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationProtrol.swift; sourceTree = "<group>"; };
+		D27708C41EFA34180061820F /* MJRefreshDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJRefreshDelegate.swift; sourceTree = "<group>"; };
+		D27708C71EFAB2260061820F /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		D27708C91EFAB2F90061820F /* WKViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKViewModel.swift; sourceTree = "<group>"; };
+		D27708CB1EFAB8F30061820F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D27708CD1EFAC1EB0061820F /* WKToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKToolBar.swift; sourceTree = "<group>"; };
+		D27708D21EFACE8E0061820F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D27708D41EFACE990061820F /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D27708D71EFAD7280061820F /* DetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		D27708DB1EFB9BC20061820F /* OperateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperateData.swift; sourceTree = "<group>"; };
+		D2B590131EFBF1DC008B7C89 /* NSObjcetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjcetExtension.swift; sourceTree = "<group>"; };
+		D2B590151EFC155A008B7C89 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		D2B590161EFC155A008B7C89 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		F04D429307177BEB4EC46400 /* Pods-V2EXiosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EXiosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-V2EXiosTests/Pods-V2EXiosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +169,7 @@
 				D277089A1EF839050061820F /* MainModule */,
 				D27708991EF837150061820F /* TopicsLatest */,
 				D27708981EF8370C0061820F /* TopicsHot */,
+				D27708CF1EFACDDB0061820F /* Detial */,
 				D260D62A1EF8303C0098CDD5 /* Views */,
 				D260D6291EF830200098CDD5 /* Resource */,
 				D260D6281EF830190098CDD5 /* Models */,
@@ -177,9 +204,11 @@
 		D260D6261EF8300C0098CDD5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D27708CB1EFAB8F30061820F /* UIViewControllerExtension.swift */,
 				D27708B11EF95C340061820F /* UITableViewExtension.swift */,
 				D27708B71EF962E00061820F /* DateExtension.swift */,
 				D27708BE1EF97FCF0061820F /* MBProgressHUDExtension.swift */,
+				D2B590131EFBF1DC008B7C89 /* NSObjcetExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +216,7 @@
 		D260D6271EF830140098CDD5 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				D27708C61EFAB1F60061820F /* WKWebView */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -209,6 +239,7 @@
 		D260D62A1EF8303C0098CDD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D27708CD1EFAC1EB0061820F /* WKToolBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,9 +299,12 @@
 		D27708A81EF922700061820F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D27708DB1EFB9BC20061820F /* OperateData.swift */,
 				D27708A91EF9228B0061820F /* ViewRoute.swift */,
 				D27708B31EF95FB70061820F /* Config.swift */,
 				D27708B51EF9629B0061820F /* PublicFucn.swift */,
+				D27708C21EFA263C0061820F /* NavigationProtrol.swift */,
+				D27708C41EFA34180061820F /* MJRefreshDelegate.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -282,6 +316,51 @@
 				D27708BC1EF96D8B0061820F /* RequestUrl.swift */,
 			);
 			path = NetWork;
+			sourceTree = "<group>";
+		};
+		D27708C61EFAB1F60061820F /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				D27708C91EFAB2F90061820F /* WKViewModel.swift */,
+				D27708C71EFAB2260061820F /* WKWebViewController.swift */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
+		D27708CF1EFACDDB0061820F /* Detial */ = {
+			isa = PBXGroup;
+			children = (
+				D27708D61EFACF0F0061820F /* View */,
+				D27708D11EFACDF20061820F /* ViewModel */,
+				D27708D01EFACDE90061820F /* ViewController */,
+			);
+			path = Detial;
+			sourceTree = "<group>";
+		};
+		D27708D01EFACDE90061820F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D27708D21EFACE8E0061820F /* DetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		D27708D11EFACDF20061820F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D27708D41EFACE990061820F /* DetailViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D27708D61EFACF0F0061820F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D27708D71EFAD7280061820F /* DetailHeaderView.swift */,
+				D2B590151EFC155A008B7C89 /* CommentTableViewCell.swift */,
+				D2B590161EFC155A008B7C89 /* CommentTableViewCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D27708A71EF915F60061820F /* HotTopicsTableViewCell.xib in Resources */,
+				D2B590181EFC155A008B7C89 /* CommentTableViewCell.xib in Resources */,
 				D27708A01EF83A9A0061820F /* Hot.storyboard in Resources */,
 				D260D6101EF8256E0098CDD5 /* LaunchScreen.storyboard in Resources */,
 				D260D60D1EF8256E0098CDD5 /* Assets.xcassets in Resources */,
@@ -491,12 +571,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27708C31EFA263C0061820F /* NavigationProtrol.swift in Sources */,
 				D27708B61EF9629B0061820F /* PublicFucn.swift in Sources */,
 				D27708BB1EF96C7F0061820F /* AFNManger.swift in Sources */,
+				D27708D81EFAD7280061820F /* DetailHeaderView.swift in Sources */,
+				D27708C51EFA34180061820F /* MJRefreshDelegate.swift in Sources */,
 				D277089E1EF83A6D0061820F /* HotViewController.swift in Sources */,
+				D27708D51EFACE990061820F /* DetailViewModel.swift in Sources */,
 				D260D60B1EF8256E0098CDD5 /* V2EXios.xcdatamodeld in Sources */,
+				D27708D31EFACE8E0061820F /* DetailViewController.swift in Sources */,
+				D2B590141EFBF1DC008B7C89 /* NSObjcetExtension.swift in Sources */,
 				D27708B41EF95FB70061820F /* Config.swift in Sources */,
 				D27708AA1EF9228B0061820F /* ViewRoute.swift in Sources */,
+				D27708CA1EFAB2F90061820F /* WKViewModel.swift in Sources */,
 				D27708B21EF95C340061820F /* UITableViewExtension.swift in Sources */,
 				D27708BF1EF97FCF0061820F /* MBProgressHUDExtension.swift in Sources */,
 				D27708BD1EF96D8B0061820F /* RequestUrl.swift in Sources */,
@@ -504,7 +591,12 @@
 				D27708A61EF915F60061820F /* HotTopicsTableViewCell.swift in Sources */,
 				D27708B01EF92E8D0061820F /* HotViewModel.swift in Sources */,
 				D260D6031EF8256E0098CDD5 /* AppDelegate.swift in Sources */,
+				D27708CC1EFAB8F30061820F /* UIViewControllerExtension.swift in Sources */,
+				D2B590171EFC155A008B7C89 /* CommentTableViewCell.swift in Sources */,
 				D277089C1EF839900061820F /* VETabBarController.swift in Sources */,
+				D27708C81EFAB2260061820F /* WKWebViewController.swift in Sources */,
+				D27708DC1EFB9BC20061820F /* OperateData.swift in Sources */,
+				D27708CE1EFAC1EB0061820F /* WKToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
