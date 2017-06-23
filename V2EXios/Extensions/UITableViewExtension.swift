@@ -10,13 +10,18 @@
 import Foundation
 import UIKit
 
-extension UITableView {
-    
+extension UITableView{
     
     func  cellWith(Identifier: String, indexpath:IndexPath)->UITableViewCell{
         let cell = self.dequeueReusableCell(withIdentifier: Identifier, for: indexpath)
         return cell
     }
+//    func loadMoreData() {
+//        
+//    }
+//    func refreshData() {
+//        
+//    }
 
 }
 
