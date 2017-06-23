@@ -1,4 +1,3 @@
-
 //
 //  HostViewController.swift
 //  V2EXios
@@ -11,30 +10,50 @@ import UIKit
 import ReactiveCocoa
 import Result
 import ReactiveSwift
-class HotViewController: UIViewController {
+class HotViewController: UIViewController,MJAndDZDelegate{
+    internal var MJTableView: UITableView?
+//    internal var MJTableView: UITableView?
+    @IBOutlet weak var tableView: UITableView!
     fileprivate lazy var viewModel : HotViewModel = {
         return HotViewModel()
     }()
     fileprivate lazy var cellIdentifier = "HotTopicsTableViewCell"
-    @IBOutlet weak var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "最热主题"
+        self.title = "V2EX"
         tableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 150
-        // Do any additional setup after loading the view.
-        observerSignal()
-        viewModel.requestData()
+        self.MJTableView = tableView
+        addMJToTablView()
+        bindingSignalAndAddMenuView()
+
     }
-    func observerSignal(){
+    func bindingSignalAndAddMenuView(){
+        let menuView = SliderMenuView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDH, height: 44))
+        self.view.addSubview(menuView)
+        menuView.menuNameArray = viewModel.menuArray
+        
+        viewModel.dataType  <~   menuView.signl
+        
         viewModel.reloadSignal
             .observe(on: UIScheduler())
             .observeValues({
                 [weak self] reload in
-                reload ? self?.tableView.reloadData() : nil
+                self?.enMjRefresh()
+                self?.tableView.reloadData()
+                !reload ? self?.showNoMoreData() : nil
             })
     }
+
+    func loadMoreData() {
+        viewModel.requestObserver.send(value: true)
+    }
+    func refreshData() {
+        viewModel.requestObserver.send(value: false)
+    }
+
 }
 extension HotViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,7 +63,11 @@ extension HotViewController:UITableViewDelegate,UITableViewDataSource{
         return viewModel.cellFor(tablView: tableView, indexpath: indexPath, WithIdentifier: cellIdentifier)
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let model = viewModel.hotModelAtIndexpath(indepath: indexPath)
+        let detailModel = DetailViewModel(WithModel: model)
+        let vc = DetailViewController.initWith(viewModel:  detailModel)
+        pushViewController(ViewController: vc)
+        self.hidesBottomBarWhenPushed = false
     }
     
 }
