@@ -16,3 +16,4 @@ public let windowSize = UIScreen.main.bounds.size
 
 //MARK : - placeholderImageAndText 
 public let placeholder_Image =  UIImage(named: "V2EX")
+
