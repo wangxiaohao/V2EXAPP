@@ -9,33 +9,29 @@
 import UIKit
 import ReactiveSwift
 import Result
-class DetailViewController: UIViewController,NavigationDelegate{
+class DetailViewController: UIViewController,MJAndDZDelegate{
+    internal var MJTableView: UITableView?
 
-    fileprivate var viewModel : DetailViewModel
-    fileprivate var tableView : UITableView
-    init(WithViewModel:DetailViewModel) {
-        self.viewModel = WithViewModel
-        self.tableView = UITableView(frame: CGRect(x:0,y:0,width:SCREEN_WIDH,height:SCREEN_HEIGHT-44), style: .plain)
-        
-        super.init(nibName: nil , bundle: nil)
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 150
-        self.tableView.backgroundColor = hexStringToColor("f5f5f5")
-        self.view.addSubview(tableView)
-        self.tableView.tableFooterView = UIView()
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
+    @IBOutlet weak var tableView: UITableView!
+    fileprivate var viewModel : DetailViewModel!
+    
+    //
+    static func initWith(viewModel:DetailViewModel)->DetailViewController{
+        let vc = ViewRoute.DetailVC
+        vc.viewModel = viewModel
+        return vc
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "详情"
         tableView.register(UINib.init(nibName: "CommentTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentTableViewCell")
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 150
+        self.tableView.tableFooterView = UIView()
         setTableViewHeder()
-        customBarTintColorAndTitle()
+        self.MJTableView = tableView
+        addMJToTablView(onlyFoot: true)
         bindingSignal()
         // Do any additional setup after loading the view.
     }
@@ -51,7 +47,6 @@ class DetailViewController: UIViewController,NavigationDelegate{
                 }
                 self?.pushViewController(ViewController: WKWebViewController(WithViewModel: WKViewModel(title: "外部链接", url: result.value!)))
             })
-        
         viewModel.reloadSignal
             .observe(on: UIScheduler())
             .observeValues({

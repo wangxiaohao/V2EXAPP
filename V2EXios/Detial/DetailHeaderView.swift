@@ -25,7 +25,7 @@ class DetailHeaderView: UIView {
     var viewModel:DetailViewModel!{
         didSet{
             titleLab.text = viewModel.model.title
-            avatarView.sd_setImage(with: URL.init(string:viewModel.model.member?.avatar_large ?? ""), placeholderImage: placeholder_Image)
+            avatarView.sd_setImage(with: URL.init(string:"https:" + (viewModel.model.member?.avatar_large ?? "")), placeholderImage: placeholder_Image)
             userLab.text = viewModel.model.member?.username
             timeLab.text = Date.returnTimeString(WithTimestamp: Int(viewModel.model.created))
            

@@ -18,7 +18,7 @@ class CommentTableViewCell: UITableViewCell {
         didSet{
             nameLab.text = model.member?.username
             timeLab.text = Date.returnTimeString(WithTimestamp: Int(model.created))
-            avatarView.sd_setImage(with: URL.init(string: model.member?.avatar_large ?? ""), placeholderImage: placeholder_Image)
+            avatarView.sd_setImage(with: URL.init(string: "https:" + (model.member?.avatar_large ?? "")), placeholderImage: placeholder_Image)
             contentLab.text = model.content
         }
     }
