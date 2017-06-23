@@ -64,9 +64,7 @@ extension HotViewController:UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = viewModel.hotModelAtIndexpath(indepath: indexPath)
-        let detailModel = DetailViewModel(WithModel: model)
-        let vc = DetailViewController.initWith(viewModel:  detailModel)
-        pushViewController(ViewController: vc)
+        pushViewController(ViewController:   WKWebViewController(WithViewModel: WKViewModel(title: "详情", url: model.url!)))
         self.hidesBottomBarWhenPushed = false
     }
     

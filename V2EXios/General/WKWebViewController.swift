@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-class WKWebViewController: UIViewController,NavigationDelegate {
+class WKWebViewController: UIViewController {
     var wkview : WKWebView!
     fileprivate let viewModel : WKViewModel
      var progressView : UIProgressView!
@@ -24,7 +24,6 @@ class WKWebViewController: UIViewController,NavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewModel.title
-        self.customBarTintColorAndTitle()
         addSubView()
         self.wkview.load(viewModel.request)
         
@@ -37,13 +36,13 @@ class WKWebViewController: UIViewController,NavigationDelegate {
         self.view.addSubview(progressView)
         self.progressView = progressView
         
-        wkview = WKWebView(frame: UIScreen.main.bounds)
+        wkview = WKWebView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDH, height: SCREEN_HEIGHT - 44))
         self.view.insertSubview(wkview, belowSubview: progressView)
         wkview.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         
         let toolBar = WKToolBar(frame: CGRect(x: 0, y: SCREEN_HEIGHT -  44 - 44 , width: SCREEN_WIDH, height: 44))
         self.view.addSubview(toolBar)
-        
+        toolBar.isHidden = viewModel.isHidden
         toolBar.butSinal.observeValues({
            [weak self]  type in
             switch type {

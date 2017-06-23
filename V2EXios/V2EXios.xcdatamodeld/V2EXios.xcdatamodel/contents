@@ -3,6 +3,17 @@
     <entity name="BaseModel" representedClassName="BaseModel" syncable="YES" codeGenerationType="class">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="CommentModel" representedClassName="CommentModel" parentEntity="BaseModel" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content_rendered" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_modified" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_touched" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="replies" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="member" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserModel" inverseName="relations" inverseEntity="UserModel" syncable="YES"/>
+    </entity>
     <entity name="HotModel" representedClassName="HotModel" parentEntity="BaseModel" syncable="YES" codeGenerationType="class">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="content_rendered" optional="YES" attributeType="String" syncable="YES"/>
@@ -42,12 +53,14 @@
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CommentModel" inverseName="member" inverseEntity="CommentModel" syncable="YES"/>
         <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HotModel" inverseName="member" inverseEntity="HotModel" syncable="YES"/>
     </entity>
     <elements>
         <element name="BaseModel" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="CommentModel" positionX="-27" positionY="144" width="128" height="180"/>
         <element name="HotModel" positionX="-54" positionY="0" width="128" height="195"/>
         <element name="NodeModel" positionX="-36" positionY="45" width="128" height="180"/>
-        <element name="UserModel" positionX="-18" positionY="117" width="128" height="285"/>
+        <element name="UserModel" positionX="-18" positionY="117" width="128" height="300"/>
     </elements>
 </model>

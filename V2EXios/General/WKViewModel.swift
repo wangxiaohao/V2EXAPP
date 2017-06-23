@@ -10,7 +10,11 @@ import Foundation
 
 class WKViewModel{
     let title : String
+    var isHidden:Bool{
+        return hiddenToolBar()
+    }
     fileprivate let url : String
+    
     var request : URLRequest{
         get{
             return returnRequest()
@@ -24,5 +28,11 @@ class WKViewModel{
         let url = URL(string: self.url)
         let request = URLRequest(url: url!)
         return request
+    }
+    private func hiddenToolBar()->Bool{
+        if title == "外部链接"{
+            return true
+        }
+        return false
     }
 }

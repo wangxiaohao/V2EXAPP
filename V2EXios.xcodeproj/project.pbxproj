@@ -16,7 +16,7 @@
 		D260D61B1EF8256E0098CDD5 /* V2EXiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D260D61A1EF8256E0098CDD5 /* V2EXiosTests.swift */; };
 		D277089C1EF839900061820F /* VETabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277089B1EF839900061820F /* VETabBarController.swift */; };
 		D277089E1EF83A6D0061820F /* HotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D277089D1EF83A6D0061820F /* HotViewController.swift */; };
-		D27708A01EF83A9A0061820F /* Hot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D277089F1EF83A9A0061820F /* Hot.storyboard */; };
+		D27708A01EF83A9A0061820F /* Topics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D277089F1EF83A9A0061820F /* Topics.storyboard */; };
 		D27708A61EF915F60061820F /* HotTopicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708A41EF915F60061820F /* HotTopicsTableViewCell.swift */; };
 		D27708A71EF915F60061820F /* HotTopicsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27708A51EF915F60061820F /* HotTopicsTableViewCell.xib */; };
 		D27708AA1EF9228B0061820F /* ViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27708A91EF9228B0061820F /* ViewRoute.swift */; };
@@ -41,6 +41,8 @@
 		D2B590141EFBF1DC008B7C89 /* NSObjcetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B590131EFBF1DC008B7C89 /* NSObjcetExtension.swift */; };
 		D2B590171EFC155A008B7C89 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B590151EFC155A008B7C89 /* CommentTableViewCell.swift */; };
 		D2B590181EFC155A008B7C89 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2B590161EFC155A008B7C89 /* CommentTableViewCell.xib */; };
+		D2B5901A1EFD3726008B7C89 /* VENavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B590191EFD3726008B7C89 /* VENavigationViewController.swift */; };
+		D2B5901C1EFD639D008B7C89 /* SliderMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B5901B1EFD639D008B7C89 /* SliderMenuView.swift */; };
 		DE66E1EF4EDA6B4FE5716111 /* Pods_V2EXios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C0A652AF4A8FDCC121DC1A /* Pods_V2EXios.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +74,7 @@
 		D260D61C1EF8256E0098CDD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D277089B1EF839900061820F /* VETabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VETabBarController.swift; sourceTree = "<group>"; };
 		D277089D1EF83A6D0061820F /* HotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotViewController.swift; sourceTree = "<group>"; };
-		D277089F1EF83A9A0061820F /* Hot.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hot.storyboard; sourceTree = "<group>"; };
+		D277089F1EF83A9A0061820F /* Topics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Topics.storyboard; sourceTree = "<group>"; };
 		D27708A41EF915F60061820F /* HotTopicsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotTopicsTableViewCell.swift; sourceTree = "<group>"; };
 		D27708A51EF915F60061820F /* HotTopicsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotTopicsTableViewCell.xib; sourceTree = "<group>"; };
 		D27708A91EF9228B0061820F /* ViewRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRoute.swift; sourceTree = "<group>"; };
@@ -98,6 +100,8 @@
 		D2B590131EFBF1DC008B7C89 /* NSObjcetExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjcetExtension.swift; sourceTree = "<group>"; };
 		D2B590151EFC155A008B7C89 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		D2B590161EFC155A008B7C89 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		D2B590191EFD3726008B7C89 /* VENavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VENavigationViewController.swift; sourceTree = "<group>"; };
+		D2B5901B1EFD639D008B7C89 /* SliderMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuView.swift; sourceTree = "<group>"; };
 		F04D429307177BEB4EC46400 /* Pods-V2EXiosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EXiosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-V2EXiosTests/Pods-V2EXiosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,9 +171,7 @@
 				D27708B91EF96BC90061820F /* NetWork */,
 				D27708A81EF922700061820F /* Utils */,
 				D277089A1EF839050061820F /* MainModule */,
-				D27708991EF837150061820F /* TopicsLatest */,
 				D27708981EF8370C0061820F /* TopicsHot */,
-				D27708CF1EFACDDB0061820F /* Detial */,
 				D260D62A1EF8303C0098CDD5 /* Views */,
 				D260D6291EF830200098CDD5 /* Resource */,
 				D260D6281EF830190098CDD5 /* Models */,
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				D27708CD1EFAC1EB0061820F /* WKToolBar.swift */,
+				D2B5901B1EFD639D008B7C89 /* SliderMenuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,19 +250,11 @@
 		D27708981EF8370C0061820F /* TopicsHot */ = {
 			isa = PBXGroup;
 			children = (
-				D27708A31EF915810061820F /* View */,
-				D27708A21EF915780061820F /* ViewModel */,
-				D27708A11EF915700061820F /* Controller */,
-				D277089F1EF83A9A0061820F /* Hot.storyboard */,
+				D27708CF1EFACDDB0061820F /* TopicsDetial */,
+				D2B5901D1EFD6E0D008B7C89 /* TopicsList */,
+				D277089F1EF83A9A0061820F /* Topics.storyboard */,
 			);
 			path = TopicsHot;
-			sourceTree = "<group>";
-		};
-		D27708991EF837150061820F /* TopicsLatest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TopicsLatest;
 			sourceTree = "<group>";
 		};
 		D277089A1EF839050061820F /* MainModule */ = {
@@ -267,6 +262,7 @@
 			children = (
 				D260D6061EF8256E0098CDD5 /* Main.storyboard */,
 				D277089B1EF839900061820F /* VETabBarController.swift */,
+				D2B590191EFD3726008B7C89 /* VENavigationViewController.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -327,14 +323,15 @@
 			name = WKWebView;
 			sourceTree = "<group>";
 		};
-		D27708CF1EFACDDB0061820F /* Detial */ = {
+		D27708CF1EFACDDB0061820F /* TopicsDetial */ = {
 			isa = PBXGroup;
 			children = (
 				D27708D61EFACF0F0061820F /* View */,
 				D27708D11EFACDF20061820F /* ViewModel */,
 				D27708D01EFACDE90061820F /* ViewController */,
 			);
-			path = Detial;
+			name = TopicsDetial;
+			path = ../Detial;
 			sourceTree = "<group>";
 		};
 		D27708D01EFACDE90061820F /* ViewController */ = {
@@ -361,6 +358,16 @@
 				D2B590161EFC155A008B7C89 /* CommentTableViewCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		D2B5901D1EFD6E0D008B7C89 /* TopicsList */ = {
+			isa = PBXGroup;
+			children = (
+				D27708A31EF915810061820F /* View */,
+				D27708A21EF915780061820F /* ViewModel */,
+				D27708A11EF915700061820F /* Controller */,
+			);
+			name = TopicsList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,7 +464,7 @@
 			files = (
 				D27708A71EF915F60061820F /* HotTopicsTableViewCell.xib in Resources */,
 				D2B590181EFC155A008B7C89 /* CommentTableViewCell.xib in Resources */,
-				D27708A01EF83A9A0061820F /* Hot.storyboard in Resources */,
+				D27708A01EF83A9A0061820F /* Topics.storyboard in Resources */,
 				D260D6101EF8256E0098CDD5 /* LaunchScreen.storyboard in Resources */,
 				D260D60D1EF8256E0098CDD5 /* Assets.xcassets in Resources */,
 				D260D6081EF8256E0098CDD5 /* Main.storyboard in Resources */,
@@ -577,6 +584,7 @@
 				D27708D81EFAD7280061820F /* DetailHeaderView.swift in Sources */,
 				D27708C51EFA34180061820F /* MJRefreshDelegate.swift in Sources */,
 				D277089E1EF83A6D0061820F /* HotViewController.swift in Sources */,
+				D2B5901A1EFD3726008B7C89 /* VENavigationViewController.swift in Sources */,
 				D27708D51EFACE990061820F /* DetailViewModel.swift in Sources */,
 				D260D60B1EF8256E0098CDD5 /* V2EXios.xcdatamodeld in Sources */,
 				D27708D31EFACE8E0061820F /* DetailViewController.swift in Sources */,
@@ -584,6 +592,7 @@
 				D27708B41EF95FB70061820F /* Config.swift in Sources */,
 				D27708AA1EF9228B0061820F /* ViewRoute.swift in Sources */,
 				D27708CA1EFAB2F90061820F /* WKViewModel.swift in Sources */,
+				D2B5901C1EFD639D008B7C89 /* SliderMenuView.swift in Sources */,
 				D27708B21EF95C340061820F /* UITableViewExtension.swift in Sources */,
 				D27708BF1EF97FCF0061820F /* MBProgressHUDExtension.swift in Sources */,
 				D27708BD1EF96D8B0061820F /* RequestUrl.swift in Sources */,

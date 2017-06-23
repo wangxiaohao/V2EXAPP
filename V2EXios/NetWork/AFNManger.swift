@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import AFNetworking
 import MBProgressHUD
-
+import MagicalRecord
 
 class AFN : NSObject {
     class var sharedState : AFN {
@@ -19,6 +19,7 @@ class AFN : NSObject {
         }
         return Static.instance
     }
+    //配置请求
     fileprivate lazy var WHAFN : AFHTTPSessionManager  = {
         let afn = AFHTTPSessionManager(baseURL: URL(string: UrlRoute.rootUrl))
         afn.requestSerializer.timeoutInterval = 10
@@ -90,81 +91,11 @@ class AFN : NSObject {
             }, failure: {
                 task ,Error in
                 print(Error)
+                dataCompletionHandler(-1, "")
                 self.showError(error: Error as NSError)
         })
     }
-    
-    /// 登录接口
-    ///
-    /// - Parameters:
-    ///   - parmaters: <#parmaters description#>
-    ///   - CompletHander: <#CompletHander description#>
-//    func login(parmaters:[String:Any],CompletHander:@escaping(Bool,String)->Void){
-//        
-//        WHAFN.sharedManger.post(Config.loginUrl, parameters: parmaters, progress: nil, success: {
-//            [weak self]    task,value in
-//            print("====>requesturl",task.currentRequest?.url ?? "")
-//            print("====>requestBody",parmaters)
-//            let result = JSON(value)
-//            let get_error = self?.fromReturnData(result: result)
-//            
-//            guard get_error == nil else {
-//                self?.showError(error: get_error!)
-//                return
-//            }
-//            LoginModel.mr_truncateAll()
-//            let model : LoginModel = operateData.newObj()
-//            model.mr_importValuesForKeys(with: result["result"].dictionaryObject)
-//            operateData.save()
-//            User.sharedState.loginModel = model
-//            WHAFN.sharedManger.setHeader()
-//            CompletHander(true, "登录成功")
-//            
-//            }, failure: {
-//                task,error in
-//                print(error)
-//                self.showError(error: error as NSError)
-//                
-//        })
-//        
-//    }
-    //上传图片
-//    func uploadImage(url:String,parmaters:[String:Any],photos:[UIImage],dataCompletionHandler:@escaping (Int,Any)->Void) {
-//        MBProgressHUD.showLoading()
-//        weak var weakself = self
-//        WHAFN.post(url, parameters: parmaters, constructingBodyWith: {
-//            formdata in
-//            var i = 0
-//            for sub in photos {
-//                let image =  UIImageJPEGRepresentation(sub, 0.5)
-//                let file_name = currentTime() + "\(i).jpeg"
-//                formdata.appendPart(withFileData: image!, name: "imageFiled\(i)", fileName:file_name  , mimeType: "image/jpeg")
-//                i += 1
-//            }
-//            
-//        }, progress: {
-//            uploadProgress in
-//            print("--->图片上传进度:",uploadProgress)
-//        }, success: {
-//            task , value in
-//            
-//            print("====>requesturl",task.currentRequest?.url ?? "")
-//            print("====>requestBody",parmaters)
-//            let result = JSON(value)
-//            let get_error = weakself?.fromReturnData(result: result)
-//            guard get_error == nil else {
-//                weakself?.showError(error: get_error!)
-//                return
-//            }
-//            dataCompletionHandler(1,"提交成功")
-//            
-//        }, failure: {
-//            task ,error in
-//        })
-//        
-//        
-//    }
-    
+
     
     
     /// 处理json数据
@@ -207,10 +138,15 @@ class AFN : NSObject {
         var dataArray : [Any] = []
         let calss   = objc_getClass(model) as? BaseModel.Type
         for sub in data {
-            let new  = calss?.mr_createEntity()
-            new?.mr_importValuesForKeys(with: sub.dictionaryObject)
+           
+            var new  = calss?.mr_findFirst(byAttribute: "id", withValue: sub["id"].int ?? 99999)
+            if new == nil {
+                new = calss?.mr_createEntity()
+            }
+            new?.mr_importValuesForKeys(with: sub.dictionaryObject ?? [:])
             dataArray.append(new!)
         }
+        operateData.save()
         return dataArray
     }
     
@@ -259,6 +195,7 @@ class AFN : NSObject {
         if errorMsg == "NOT_LOGIN" {
 //            requireLogin()
         }
+        
         MBProgressHUD.showText(errorMsg ?? "网络好像有问题")
         
     }
