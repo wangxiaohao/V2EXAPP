@@ -1,9 +1,11 @@
 # V2EXIOSAPP
 ---
 ##项目介绍
+
 基于V2EX的API，使用 MVVM + ReactiveCocoa 的开源项目，功能还在陆续开发中。
-***
+
 ##运行
+
 环境
 
 * xcode 8.3
@@ -24,6 +26,7 @@ pod install
 ---
   
 ##联系
+
 - Email: wanghaojobuse@gmail.com
 - QQ: 452934098
 
